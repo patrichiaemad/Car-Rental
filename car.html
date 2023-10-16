@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>CarCAr</title>
+<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+<div class="bar">
+  <img src="Capture.PNG" class="logo">
+    <nav>
+    <ul>
+        <li><a  href="admin.html">Home</a></li>
+        <li><a class="active" href="car.html">Cars</a></li>
+        <li><a href="viewcar.php">view car</a></li>
+        <li><a href="report.html">reports</a></li>
+        <li><a href="index.html">Logout</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        
+      </ul>
+    </nav>
+</div>
+	<div style="
+  height: 100vh;
+  min-height: 500px;
+  background: url('images/back\ cars.jpg') no-repeat center;
+  background-size: cover;
+">
+<div id="left">
+  <b><form action="registercar.php" method="post" >
+<h1> ADD CAR </h1>
+Model : <input type="text" name="model" placeholder="Model"/><br><br>
+Type :<select name="type"><option>Compact</option>
+  <option>Medium</option>
+  <option>Large</option>
+  <option>SUV</option>
+  <option>Van</option>
+  <option>Truck</option></select> <br><br>
+Plate ID : <input type="text" name="plateid" placeholder="plate ID"/><br><br>
+Year : <input type="text" name="year" placeholder="Year"/><br><br>
+Price/day : <input type="text" name="price" placeholder="Price"/><br><br>
+
+<button type="submit" >submit </button>
+</form></b>	
+  </div>	
+  <br>
+  <div>
+    
+    <form action="updatecar.php" method="post">
+      <h1> UPDATE status </h1>
+    Select Car type to update: <select name = "typeup">
+    <option>Compact</option>
+    <option>Medium</option>
+    <option>Large</option>
+    <option>SUV</option>
+    <option>Van</option>
+    <option>Truck</option>
+    </select><br><br>
+    plate ID : <input type="text" name="plateidup"/><br><br>
+    status <select name="statusup" >
+      <option>active</option>
+      <option>out of service</option>
+    </select>
+    <button type="submit">update</button>
+    </form>
+
+
+  </div>
+  </div>
+
+</body>
+
+
+
+
+</html>

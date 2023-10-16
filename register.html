@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>
+        Registration
+    </title>
+    <link rel="stylesheet" href="loginstyle.css">
+    <link rel="stylesheet" href="main.css">
+    <script>
+        function validateForm() {
+            let x = document.forms["informations"]["fname2"].value;
+            let y = document.forms["informations"]["passw"].value;
+            let z = document.forms["informations"]["mail"].value;
+            let w = document.forms["informations"]["confirmation"].value;
+            if (x == "" || y == "" || z == "" || w == "") {
+                alert("All the information must be filled");
+                return false;
+            }
+            else if (y != w) {
+                alert("password not match");
+                return false;
+            } else {
+                alert("registration successfull ");
+
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="bar">
+        <img src="Capture.PNG" class="logo">
+        <nav>
+        <ul>
+            <li><a  href="index.html">Home</a></li>
+            <li><a class="active" href="login.html">Login</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            
+            
+          </ul>
+        </nav>
+    </div>
+    <div style="
+  height: 100vh;
+  min-height: 500px;
+  background: url('images/login.jpg') no-repeat center;
+  background-size: cover;
+">
+        <form class="input" name="informations" action="registration.php" onsubmit="return validateForm()" method="post">
+            <h1 id="loginheader">Registration</h1>
+            
+            <div class="container" id="loginback">
+            Username: <br><input class= "inputhold" type="text" name="fname2" placeholder="Username" ><br>
+            Email:<br><input class= "inputhold" type="email" name="mail" placeholder="Email" ><br>
+            Location:<br><input class= "inputhold" type="text" name="location" placeholder="location" ><br>
+            Password: <br><input class= "inputhold"type="password" name="passw" placeholder="Password" ><br>
+            Confirm Password :<br><input class= "inputhold" type="password" name="confirmation" placeholder="Confirm password" ><br>
+            <button type="submit">Register</button>
+        </form>
+        
+        Alredy have an account<a href="login.html"> Login here</a>
+        
+    </div>
+</div>
+    
+</body>
+</html>

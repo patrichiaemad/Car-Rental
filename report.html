@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>CarCAr</title>
+<link rel="stylesheet" href="main.css">
+</head>
+    <body>
+    <div class="bar">
+    <img src="Capture.PNG" class="logo">
+    <nav>
+    <ul>
+        <li><a  href="admin.html">Home</a></li>
+        <li><a  href="car.html">Cars</a></li>
+        <li><a  href="viewcar.php">view car</a></li>
+        <li><a class="active" href="reports.php">reports</a></li>
+        <li><a href="index.html">Logout</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        
+      </ul>
+    </nav>
+</div>
+<div style="
+  height: 100vh;
+  min-height: 500px;
+  background: url('images/back\ cars.jpg') no-repeat center;
+  background-size: cover;
+">
+<div>
+    <form id="left" action="report1.php" method="post">
+     <h1>report 1</h1>
+      All reservation between <br> <input type="date" name="date" placeholder="date"/> and <input type="date" name="enddate" placeholder="date"/>
+    <br>
+    <button type="submit">View</button>
+    </form>
+    <form id="left" action="report2.php" method="post">
+     <h1>report 2</h1>
+      All reservation of <select name = "type">
+        <option>Compact</option>
+        <option>Medium</option>
+        <option>Large</option>
+        <option>SUV</option>
+        <option>Van</option>
+        <option>Truck</option>
+        </select><br><br>  car between <br> <input type="date" name="date" placeholder="date"/> and <input type="date" name="enddate" placeholder="date"/>
+    <br>
+    <button type="submit">View</button>
+    </form>
+    <form id="left" action="report3.php" method="post">
+     <h1>report 3</h1>
+      The profit of <input type="text" name="model" placeholder="model"/> car
+    <br>
+    <button type="submit">View</button>
+    </form>
+    <form id="left" action="report4.php" method="post">
+     <h1>report 4</h1>
+      All reservation of <input type="text" name="name" placeholder="name"/> between <br> <input type="date" name="date" placeholder="date"/> and <input type="date" name="enddate" placeholder="date"/>
+    <br>
+    <button type="submit">View</button>
+    </form>
+
+  </div>
+  </div>
+  </body>
+  </html>

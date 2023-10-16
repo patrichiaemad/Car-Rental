@@ -1,0 +1,49 @@
+body {font-family: 'Oswald', sans-serif;
+    background-image:url('home back.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    
+form {border: 3px solid rgb(80, 77, 77); background-color: grey;}
+
+input[type=email], input[type=password] ,input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    
+  }
+  
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: auto;
+  }
+  
+button:hover {
+    opacity: 0.8;
+  }
+
+  .cancelbutton {
+    width: auto;
+    padding: 14px 20px;
+    background-color: #f44336;
+  }  
+  .container {
+    padding: 16px;
+    background-color: grey;
+  }
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  #loginback{color: black;}
+  #cancelback{color: black;}
+    

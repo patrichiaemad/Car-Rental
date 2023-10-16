@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>CarCAr</title>
+<link rel="stylesheet" href="home.css">
+
+</head>
+
+<body>
+<div class="bar">
+  <img src="Capture.PNG" class="logo">
+    <nav>
+    <ul>
+        <li><a  href="user.html">Home</a></li>
+        <li><a class="active" href="book.html">Book a car</a></li>
+        <li><a href="return.php">return</a></li>
+        <li><a href="index.html">Logout</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        
+        
+      </ul>
+    </nav>
+</div>
+<div
+id="main"
+style="
+  height: 100vh;
+  min-height: 500px;
+  background: url('images/back\ book.jpg') no-repeat center;
+  background-size: cover;
+"
+>
+<div id="left">
+    <b><form action="avaible.php" method="post" >
+  <h1> choose your car </h1>
+   
+  Type :<select name="typeB"><option>Compact</option>
+    <option>Medium</option>
+    <option>Large</option>
+    <option>SUV</option>
+    <option>Van</option>
+    <option>Truck</option></select> <br><br>
+    
+  <button type="submit" >check avaibility </button>
+  </form></b>	
+    </div>	
+    <div id="images">
+        <SCRIPT LANGUAGE="JavaScript">
+        
+        var num=1
+        img1 = new Image ()
+        img1.src = "images/1.png"
+        img2 = new Image ()
+        img2.src = "images/2.png"
+        img3 = new Image ()
+        img3.src = "images/3.png"
+        img4 = new Image ()
+        img4.src = "images/4.png" 
+        img5 = new Image ()
+        img5.src = "images/5.png" 
+        img6 = new Image ()
+        img6.src = "images/6.png" 
+        
+        text1 = "MEDIUM"
+        text2 = "S.U.V"
+        text3 = "COMPACT"
+        text4 = "LARGE"
+        text5 = "TRUCK"
+        text6 = "VAN"
+        
+        function slideshowUp()
+        {
+        num=num+1
+        if (num==7)
+        {num=1}
+        document.mypic.src=eval("img"+num+".src")
+        document.raj.iname.value=eval("text"+num)
+        }
+        
+        function slideshowBack()
+        {
+        num=num-1
+        if (num==0)
+        {num=6}
+        document.mypic.src=eval("img"+num+".src")
+        document.raj.iname.value=eval("text"+num)
+        }
+        
+        </SCRIPT>
+        <!-- The Image and Form Codes are Below --> 
+        <CENTER>
+        <IMG SRC="images/1.png" NAME="mypic" BORDER=0 HEIGHT="380" WIDTH="500">
+        <FORM  NAME="raj" id="white">
+        <INPUT TYPE="text" WIDTH="100" NAME="iname" VALUE="Medium">
+        </FORM><A HREF="JavaScript:slideshowBack()"> Back</A>  <A HREF="JavaScript:slideshowUp()"> Next</A> 
+        
+        
+            </div>
+</div>
+
+</body>
+
+
+
+
+</html>
